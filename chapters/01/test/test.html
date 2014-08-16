@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <!-- Mocha styles. -->
-    <link rel="stylesheet" href="../../../notes/test/js/lib/mocha.css" />
+    <link rel="stylesheet" href="../../../bower_components/mocha/mocha.css" />
 
     <!-- Test libraries. -->
-    <script src="../../../notes/test/js/lib/mocha.js"></script>
-    <script src="../../../notes/test/js/lib/chai.js"></script>
-    <script src="../../../notes/test/js/lib/sinon.js"></script>
+    <script src="../../../bower_components/mocha/mocha.js"></script>
+    <script src="../../../bower_components/chai/chai.js"></script>
+    <script src="../../../bower_components/sinonjs/sinon.js"></script>
 
     <!-- Test Setup -->
     <script>
       // Setup.
+      chai.should();
       var expect = chai.expect;
       mocha.setup("bdd");
 
